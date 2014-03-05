@@ -1,0 +1,40 @@
+{
+  "name": "rework-plugin-inline",
+  "version": "0.1.0",
+  "description": "inline() plugin for rework, formerly included in core",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require should --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/reworkcss/rework-plugin-inline.git"
+  },
+  "keywords": [
+    "browser",
+    "server",
+    "css",
+    "preprocess",
+    "assets",
+    "transform",
+    "inline"
+  ],
+  "author": "reworkcss",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reworkcss/rework-plugin-inline/issues"
+  },
+  "homepage": "https://github.com/reworkcss/rework-plugin-inline",
+  "devDependencies": {
+    "should": "^3.1.3",
+    "mocha": "^1.17.1",
+    "rework": "^0.20.2"
+  },
+  "peerDependencies": {
+    "rework": "^0.20.2"
+  },
+  "dependencies": {
+    "mime": "1.2.11",
+    "rework-plugin-function": "^0.1.1"
+  }
+}
