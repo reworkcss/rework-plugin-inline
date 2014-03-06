@@ -1,6 +1,6 @@
 {
   "name": "rework-plugin-inline",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "inline() plugin for rework, formerly included in core",
   "main": "index.js",
   "scripts": {
