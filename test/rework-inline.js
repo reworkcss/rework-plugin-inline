@@ -1,5 +1,6 @@
 
 var rework = require('rework')
+  , inline = require('../')
   , fs = require('fs')
   , assert = require('assert')
   , read = fs.readFileSync;
@@ -11,14 +12,14 @@ function fixture(name) {
 describe('.inline(dir)', function () {
   it('should inline images', function () {
     rework(fixture('inline'))
-      .use(rework.inline('lib/', 'test/fixtures'))
+      .use(inline('lib/', 'test/fixtures'))
       .toString()
       .should.equal(fixture('inline.out'));
   })
 
   it('should accept dirs in array', function () {
     rework(fixture('inline'))
-      .use(rework.inline(['lib/', 'test/fixtures']))
+      .use(inline(['lib/', 'test/fixtures']))
       .toString()
       .should.equal(fixture('inline.out'));
   })
@@ -26,7 +27,7 @@ describe('.inline(dir)', function () {
   it('should throw error on nonexistent file', function () {
     (function () {
       rework(fixture('inline'))
-        .use(rework.inline())
+        .use(inline())
         .toString()
     }).should.throw(/dot.png/)
   })

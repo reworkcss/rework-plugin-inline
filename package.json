@@ -35,6 +35,6 @@
   },
   "dependencies": {
     "mime": "1.2.11",
-    "rework-plugin-function": "^0.1.1"
+    "rework-plugin-function": "^0.1.2"
   }
 }
